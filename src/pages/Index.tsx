@@ -42,9 +42,9 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <ConversionSection variant="default" className="pt-16">
-        <div className="text-center space-y-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+      <ConversionSection variant="default" className="pt-8 md:pt-16">
+        <div className="text-center space-y-6 md:space-y-8">
+          <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-foreground leading-tight px-4">
             Más de <span className="text-success">3.757 perros</span> ya volvieron a correr, jugar y vivir{" "}
             <span className="text-primary">sin dolores en las articulaciones</span>
           </h1>
@@ -66,12 +66,12 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="space-y-6 max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+          <div className="space-y-6 max-w-3xl mx-auto px-4">
+            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
               Dile adiós a la tristeza de ver a tu mejor amigo cojeando.<br/>
               Con un ajuste simple y natural en la alimentación, tu perro puede recuperar energía y movilidad en pocos días.
             </p>
-            <Button variant="cta" size="xl" className="animate-bounce-gentle">
+            <Button variant="cta" size="xl" className="animate-bounce-gentle w-full md:w-auto min-h-[44px]">
               QUIERO AYUDAR A MI PERRO AHORA
             </Button>
           </div>
@@ -80,13 +80,13 @@ const Index = () => {
 
       {/* Story Section */}
       <ConversionSection className="bg-muted/30">
-        <div className="text-center space-y-6 max-w-3xl mx-auto">
-          <p className="text-lg leading-relaxed">
+        <div className="text-center space-y-6 max-w-3xl mx-auto px-4">
+          <p className="text-base md:text-lg leading-relaxed">
             Sé lo doloroso que es ver sufrir a tu perro.<br/>
             Ver esa mirada triste, la dificultad para subir al sofá o caminar.<br/>
             Yo también pasé por eso… y así nació Perro Saludable.
           </p>
-          <p className="text-xl font-semibold text-primary">
+          <p className="text-lg md:text-xl font-semibold text-primary">
             Hoy, 3.757 perros ya han recuperado calidad de vida con nuestro método — y el tuyo puede ser el próximo.
           </p>
         </div>
@@ -94,39 +94,30 @@ const Index = () => {
 
       {/* What is Section */}
       <ConversionSection>
-        <div className="text-center space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+        <div className="text-center space-y-6 md:space-y-8 px-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
             💡 ¿Qué es y cómo funciona?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Es una guía digital con orientaciones prácticas para:
           </p>
           <CheckList items={beneficios} variant="success" />
-          
-          {/* Product Image */}
-          <div className="flex justify-center py-8">
-            <img 
-              src="/lovable-uploads/3c26dd21-d141-42ff-b340-7399937a695c.png" 
-              alt="Ebook Perro Saludable" 
-              className="max-w-sm w-full h-auto shadow-card rounded-lg hover:scale-105 transition-transform duration-300"
-            />
-          </div>
         </div>
       </ConversionSection>
 
       {/* How it Works */}
       <ConversionSection variant="highlight">
-        <div className="text-center space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold">
+        <div className="text-center space-y-6 md:space-y-8 px-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
             📈 El secreto detrás de los resultados
           </h2>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
             El método de Perro Saludable actúa en tres pilares:
           </p>
           <CheckList items={secretos} className="text-primary-foreground" />
           
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Beneficios:</h3>
+            <h3 className="text-xl md:text-2xl font-bold">Beneficios:</h3>
             <CheckList items={resultados} className="text-primary-foreground" />
           </div>
         </div>
@@ -134,11 +125,11 @@ const Index = () => {
 
       {/* Testimonials */}
       <ConversionSection variant="testimonial">
-        <div className="text-center space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+        <div className="text-center space-y-6 md:space-y-8 px-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
             🐕 Historias reales, resultados reales
           </h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid gap-6 max-w-4xl mx-auto md:grid-cols-2">
             <TestimonialCard 
               content="Mi perro estaba sin ánimo… después de seguir la guía, volvió a correr en 10 días!"
               author="María S."
@@ -148,7 +139,7 @@ const Index = () => {
               author="Juan L."
             />
           </div>
-          <p className="text-xl font-bold text-primary">
+          <p className="text-lg md:text-xl font-bold text-primary">
             Más de 3.757 perros ya han sido transformados por Perro Saludable. El próximo puede ser el tuyo.
           </p>
         </div>
@@ -156,12 +147,21 @@ const Index = () => {
 
       {/* Offer Section */}
       <ConversionSection variant="offer">
-        <div className="text-center space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+        <div className="text-center space-y-6 md:space-y-8 px-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
             🔥 Oferta especial por tiempo limitado
           </h2>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-cta max-w-2xl mx-auto">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-cta max-w-2xl mx-auto">
+            {/* Product Image */}
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/3c26dd21-d141-42ff-b340-7399937a695c.png" 
+                alt="Ebook Perro Saludable" 
+                className="max-w-[200px] md:max-w-[250px] w-full h-auto shadow-card rounded-lg hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            
             <PriceTag 
               originalPrice="49" 
               currentPrice="9,90" 
@@ -169,19 +169,19 @@ const Index = () => {
               className="mb-6"
             />
             
-            <div className="space-y-4 text-lg">
-              <p className="flex items-center justify-center gap-2">
+            <div className="space-y-3 md:space-y-4 text-base md:text-lg">
+              <p className="flex items-center justify-center gap-2 flex-wrap text-center">
                 🎁 <strong>Bono:</strong> Lista de los 10 peores piensos para tu perro
               </p>
-              <p className="flex items-center justify-center gap-2">
+              <p className="flex items-center justify-center gap-2 flex-wrap text-center">
                 ✅ <strong>Garantía de 7 días:</strong> si no te gusta, te devolvemos el dinero
               </p>
-              <p className="text-xl font-bold">
+              <p className="text-lg md:text-xl font-bold">
                 Acceso de por vida
               </p>
             </div>
             
-            <Button variant="success" size="xl" className="mt-8 w-full animate-pulse-glow">
+            <Button variant="success" size="xl" className="mt-6 md:mt-8 w-full animate-pulse-glow min-h-[44px]">
               QUIERO PERRO SALUDABLE AHORA
             </Button>
           </div>
@@ -190,17 +190,17 @@ const Index = () => {
 
       {/* FAQ */}
       <ConversionSection>
-        <div className="text-center space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+        <div className="text-center space-y-6 md:space-y-8 px-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
             ❓ Preguntas Frecuentes
           </h2>
           <div className="space-y-4 max-w-3xl mx-auto text-left">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-card p-6 rounded-lg shadow-card">
-                <h3 className="font-bold text-lg text-foreground mb-2">
+              <div key={index} className="bg-card p-4 md:p-6 rounded-lg shadow-card">
+                <h3 className="font-bold text-base md:text-lg text-foreground mb-2">
                   {faq.q}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-sm md:text-base text-muted-foreground">
                   → {faq.a}
                 </p>
               </div>
@@ -211,12 +211,12 @@ const Index = () => {
 
       {/* Final CTA */}
       <ConversionSection variant="highlight">
-        <div className="text-center space-y-8">
-          <p className="text-2xl md:text-3xl font-bold leading-relaxed">
+        <div className="text-center space-y-6 md:space-y-8 px-4">
+          <p className="text-xl md:text-2xl lg:text-3xl font-bold leading-relaxed">
             Tu perro merece vivir sin dolor.<br/>
             Ya son 3.757 perros transformados. Ahora es el turno del tuyo.
           </p>
-          <Button variant="cta" size="xl" className="animate-bounce-gentle">
+          <Button variant="cta" size="xl" className="animate-bounce-gentle w-full md:w-auto min-h-[44px]">
             QUIERO AYUDAR A MI PERRO AHORA
           </Button>
         </div>
